@@ -26,12 +26,23 @@ const config: Config = {
 
   onBrokenLinks: 'throw',
 
-  // Even if you don't use internationalization, you can use this field to set
-  // useful metadata like html lang. For example, if your site is Chinese, you
-  // may want to replace "en" with "zh-Hans".
+  // Internationalization configuration
+  // Hebrew (he) is configured with direction: 'rtl' for right-to-left support
   i18n: {
     defaultLocale: 'en',
-    locales: ['en'],
+    locales: ['en', 'he'],
+    localeConfigs: {
+      en: {
+        label: 'English',
+        direction: 'ltr',
+        htmlLang: 'en-US',
+      },
+      he: {
+        label: 'עברית',
+        direction: 'rtl',
+        htmlLang: 'he-IL',
+      },
+    },
   },
 
   presets: [
@@ -51,7 +62,7 @@ const config: Config = {
   ],
 
   themeConfig: {
-    image: 'img/lumina-social-card.jpg',
+    image: 'img/lumina-social-card.png',
     colorMode: {
       respectPrefersColorScheme: true,
     },
@@ -67,6 +78,10 @@ const config: Config = {
           sidebarId: 'docsSidebar',
           position: 'left',
           label: 'Documentation',
+        },
+        {
+          type: 'localeDropdown',
+          position: 'right',
         },
         {
           href: 'https://github.com/luminastudy',

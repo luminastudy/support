@@ -1,0 +1,18 @@
+{
+  "version.label": {
+    "message": "Next",
+    "description": "The label for version current"
+  },
+  "sidebar.docsSidebar.category.For Students": {
+    "message": "For Students",
+    "description": "The label for category 'For Students' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.For Educators": {
+    "message": "For Educators",
+    "description": "The label for category 'For Educators' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.For Developers": {
+    "message": "For Developers",
+    "description": "The label for category 'For Developers' in sidebar 'docsSidebar'"
+  }
+}

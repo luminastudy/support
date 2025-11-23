@@ -39,6 +39,7 @@
     "@docusaurus/module-type-aliases": "3.9.2",
     "@docusaurus/tsconfig": "3.9.2",
     "@docusaurus/types": "3.9.2",
+    "@lumina-study/logo": "^1.0.0",
     "@typescript-eslint/parser": "^8.47.0",
     "cspell": "^9.3.2",
     "eslint": "^9.39.1",

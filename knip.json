@@ -7,9 +7,13 @@
     ".docusaurus/**",
     "coverage/**",
     "*.config.js",
-    "*.config.mjs"
+    "*.config.mjs",
+    "scripts/**"
   ],
-  "ignoreDependencies": ["@docusaurus/plugin-content-docs"],
+  "ignoreDependencies": [
+    "@docusaurus/plugin-content-docs",
+    "@lumina-study/logo"
+  ],
   "ignoreExportsUsedInFile": true,
   "ignoreWorkspaces": []
 }

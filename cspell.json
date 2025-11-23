@@ -34,7 +34,8 @@
     "roadmaps",
     "Roadmaps",
     "Kiro",
-    "kiro"
+    "kiro",
+    "עברית"
   ],
   "languageSettings": [
     {
@@ -50,6 +51,7 @@
     "pnpm-lock.yaml",
     "*.min.js",
     ".claude-container",
-    ".claude-revert-backup-*"
+    ".claude-revert-backup-*",
+    "i18n/he/**"
   ]
 }
