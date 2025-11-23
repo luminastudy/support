@@ -1,0 +1,8 @@
+{
+  "label": "For Students",
+  "position": 2,
+  "link": {
+    "type": "generated-index",
+    "description": "Documentation for students using the Lumina Study platform."
+  }
+}

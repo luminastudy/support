@@ -2,46 +2,56 @@
 sidebar_position: 1
 ---
 
-# Tutorial Intro
+# Welcome to Lumina Study
 
-Let's discover **Docusaurus in less than 5 minutes**.
+**Lumina Study** is a comprehensive educational technology platform designed to provide personalized learning roadmaps for school and university subjects.
+
+## What is Lumina Study?
+
+Lumina Study helps students navigate their academic journey by:
+
+- **Personalized Learning Paths** - Custom roadmaps tailored to your educational goals
+- **Interactive Course Visualization** - Visual block-based representations of course structures
+- **Multi-language Support** - Available in English, Hebrew, and Spanish
+- **Course Management** - Create, manage, and share educational content
+
+## Platform Components
+
+### Student Platform
+
+The main learning interface where students:
+
+- Access their personalized learning roadmaps
+- Browse available courses
+- Track learning progress
+- Engage with course materials
+
+### Course Manager
+
+A comprehensive tool for educators to:
+
+- Create and publish courses
+- Manage course content and structure
+- Track course versions and changes
+- Set up prerequisites and learning paths
+
+### Block Visualization
+
+Our unique block-based system visualizes:
+
+- Course dependencies and prerequisites
+- Learning hierarchies
+- Progress through course materials
 
 ## Getting Started
 
-Get started by **creating a new site**.
+Choose your role to get started:
 
-Or **try Docusaurus immediately** with **[docusaurus.new](https://docusaurus.new)**.
+- **Students** - [Browse Courses](/docs/students/browsing-courses)
+- **Educators** - [Create Your First Course](/docs/educators/creating-courses)
+- **Developers** - [Developer Documentation](/docs/developers/setup)
 
-### What you'll need
+## Need Help?
 
-- [Node.js](https://nodejs.org/en/download/) version 20.0 or above:
-  - When installing Node.js, you are recommended to check all checkboxes related to dependencies.
-
-## Generate a new site
-
-Generate a new Docusaurus site using the **classic template**.
-
-The classic template will automatically be added to your project after you run the command:
-
-```bash
-npm init docusaurus@latest my-website classic
-```
-
-You can type this command into Command Prompt, Powershell, Terminal, or any other integrated terminal of your code editor.
-
-The command also installs all necessary dependencies you need to run Docusaurus.
-
-## Start your site
-
-Run the development server:
-
-```bash
-cd my-website
-npm run start
-```
-
-The `cd` command changes the directory you're working with. In order to work with your newly created Docusaurus site, you'll need to navigate the terminal there.
-
-The `npm run start` command builds your website locally and serves it through a development server, ready for you to view at http://localhost:3000/.
-
-Open `docs/intro.md` (this page) and edit some lines: the site **reloads automatically** and displays your changes.
+- [Contact Support](https://github.com/luminastudy/support/issues)
+- [Community Forum](https://github.com/luminastudy/support/discussions)
