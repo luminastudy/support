@@ -1,0 +1,10 @@
+build
+.docusaurus
+node_modules
+coverage
+*.min.js
+pnpm-lock.yaml
+.claude-container
+.claude-revert-backup-*
+.claude
+.kiro

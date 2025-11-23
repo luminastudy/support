@@ -1,0 +1,50 @@
+{
+  "version": "0.2",
+  "language": "en,he",
+  "words": [
+    "lumina",
+    "docusaurus",
+    "pnpm",
+    "husky",
+    "eslint",
+    "tsconfig",
+    "browserslist",
+    "clsx",
+    "mdx",
+    "slorber",
+    "yangshun",
+    "Plushie",
+    "Marcey",
+    "Sébastien",
+    "Lorber",
+    "amet",
+    "consectetur",
+    "adipiscing",
+    "elit",
+    "Pellentesque",
+    "elementum",
+    "dignissim",
+    "ultricies",
+    "Fusce",
+    "rhoncus",
+    "tempor",
+    "aliquam",
+    "consequat"
+  ],
+  "languageSettings": [
+    {
+      "languageId": "*",
+      "locale": "en,he"
+    }
+  ],
+  "ignorePaths": [
+    "node_modules",
+    "build",
+    ".docusaurus",
+    "coverage",
+    "pnpm-lock.yaml",
+    "*.min.js",
+    ".claude-container",
+    ".claude-revert-backup-*"
+  ]
+}

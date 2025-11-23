@@ -1,0 +1,15 @@
+{
+  "$schema": "https://unpkg.com/knip@latest/schema.json",
+  "entry": ["src/**/*.{ts,tsx,js,jsx}"],
+  "project": ["**/*.{ts,tsx,js,jsx}"],
+  "ignore": [
+    "build/**",
+    ".docusaurus/**",
+    "coverage/**",
+    "*.config.js",
+    "*.config.mjs"
+  ],
+  "ignoreDependencies": ["@docusaurus/plugin-content-docs"],
+  "ignoreExportsUsedInFile": true,
+  "ignoreWorkspaces": []
+}
