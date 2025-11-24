@@ -26,25 +26,6 @@ const config: Config = {
 
   onBrokenLinks: 'throw',
 
-  // Internationalization configuration
-  // Hebrew (he) is configured with direction: 'rtl' for right-to-left support
-  i18n: {
-    defaultLocale: 'en',
-    locales: ['en', 'he'],
-    localeConfigs: {
-      en: {
-        label: 'English',
-        direction: 'ltr',
-        htmlLang: 'en-US',
-      },
-      he: {
-        label: 'עברית',
-        direction: 'rtl',
-        htmlLang: 'he-IL',
-      },
-    },
-  },
-
   presets: [
     [
       'classic',
@@ -78,10 +59,6 @@ const config: Config = {
           sidebarId: 'docsSidebar',
           position: 'left',
           label: 'Documentation',
-        },
-        {
-          type: 'localeDropdown',
-          position: 'right',
         },
         {
           href: 'https://github.com/luminastudy',
