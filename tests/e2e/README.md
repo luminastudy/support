@@ -1,10 +1,12 @@
-# E2E Tests for Hebrew i18n Support
+# E2E Tests for Lumina Study Documentation Site
 
-Comprehensive end-to-end test suite for the Hebrew internationalization feature, covering language switching, RTL layout, translation verification, and build output validation.
+Comprehensive end-to-end test suite covering Hebrew internationalization, logo branding, and UI components across multiple browsers, devices, and locales.
 
 ## Overview
 
-This test suite validates the complete Hebrew i18n implementation for the Lumina Study documentation site, including:
+This test suite validates core features of the Lumina Study documentation site, including:
+
+### Hebrew i18n Support
 
 - Homepage accessibility in both languages
 - Language switching functionality
@@ -13,6 +15,15 @@ This test suite validates the complete Hebrew i18n implementation for the Lumina
 - All documentation pages in both locales
 - Deep linking to Hebrew pages
 - Build output verification
+
+### Logo Branding
+
+- Logo visibility and loading across all pages
+- Consistent sizing and aspect ratio
+- Responsive design (desktop, tablet, mobile)
+- RTL layout compatibility
+- Dark mode support
+- Navigation functionality
 - Cross-browser compatibility
 
 ## Prerequisites
@@ -62,6 +73,9 @@ pnpm exec playwright test tests/e2e/i18n/documentation-pages.spec.ts
 
 # Build verification tests
 pnpm exec playwright test tests/e2e/i18n/build-verification.spec.ts
+
+# Logo styling tests
+pnpm exec playwright test tests/e2e/branding/logo-styling.spec.ts
 ```
 
 ### Specific Browser
@@ -129,10 +143,13 @@ tests/e2e/
 │   ├── hebrew-locale.spec.ts        # Homepage, navigation, language switching
 │   ├── documentation-pages.spec.ts  # All docs pages in both locales
 │   └── build-verification.spec.ts   # Build output validation
+├── branding/
+│   └── logo-styling.spec.ts         # Logo display, sizing, and responsiveness
 ├── fixtures/
 │   └── expected-translations.ts     # Expected Hebrew translations
 ├── helpers/
-│   └── i18n-helpers.ts              # Reusable test utilities
+│   ├── i18n-helpers.ts              # i18n test utilities
+│   └── navbar-helpers.ts            # Navbar and logo test utilities
 └── README.md                        # This file
 ```
 
@@ -262,11 +279,87 @@ tests/e2e/
 
 - Same number of pages in both locales
 
+### Logo Styling Tests (logo-styling.spec.ts)
+
+**Visibility and Loading** (7 tests)
+
+- Logo displays on English homepage
+- Logo displays on English documentation pages
+- Logo displays on all English docs pages
+- Logo displays on Hebrew homepage
+- Logo displays on Hebrew documentation pages
+- Logo displays on all Hebrew docs pages
+- Logo image loads successfully
+
+**Size and Dimensions** (5 tests)
+
+- Logo height is 2rem (30-40px depending on root font-size)
+- Logo container width is auto
+- Logo maintains aspect ratio
+- Logo image has height: 100%
+- Logo does not overflow navbar
+
+**Image Properties** (4 tests)
+
+- Logo loads from correct path (/support/img/logo.svg)
+- Logo has correct alt text ("Lumina Study Logo")
+- Logo is SVG format
+- Logo has valid image dimensions
+
+**Navigation and Interaction** (4 tests)
+
+- Logo links to homepage
+- Logo navigates to homepage when clicked
+- Logo navigates to Hebrew homepage from Hebrew pages
+- Logo is clickable and accessible
+
+**Responsive Design** (5 tests)
+
+- Logo displays correctly on desktop viewport (1280px)
+- Logo displays correctly on tablet viewport (768px)
+- Logo exists in DOM on mobile viewport (375px)
+- Logo exists in DOM on small mobile viewport (320px)
+- Logo maintains consistent styling on desktop and tablet
+
+**RTL Support** (4 tests)
+
+- Logo displays correctly in RTL layout (Hebrew)
+- Logo displays correctly in LTR layout (English)
+- Logo maintains position in navbar for RTL
+- Logo works when switching between LTR and RTL
+
+**Dark Mode Support** (3 tests)
+
+- Logo displays correctly in default light mode
+- Logo displays correctly with dark mode preference
+- Logo displays correctly with light mode preference
+
+**Cross-Browser Compatibility** (2 tests)
+
+- Logo has consistent styling across browsers
+- SVG renders correctly across browsers
+
+**Edge Cases** (4 tests)
+
+- Logo handles page refresh correctly
+- Logo handles browser back/forward navigation
+- Logo does not cause layout shift when page loads
+- Logo handles slow network conditions
+
+**CSS Verification** (4 tests)
+
+- Logo applies correct CSS classes
+- Logo container has correct computed styles
+- Logo image has correct computed styles
+- custom.css loads with logo styles
+
 ## Coverage Summary
 
-**Total Tests**: 67
+**Total Tests**: 102
 
 ### By Category
+
+**Hebrew i18n Tests**: 67 tests
 
 - Homepage & Navigation: 15 tests
 - Language Switching: 4 tests
@@ -275,7 +368,24 @@ tests/e2e/
 - Documentation Pages: 27 tests
 - Build Verification: 23 tests
 
+**Logo Branding Tests**: 35 tests
+
+- Visibility and Loading: 7 tests
+- Size and Dimensions: 5 tests
+- Image Properties: 4 tests
+- Navigation and Interaction: 4 tests
+- Responsive Design: 5 tests
+- RTL Support: 4 tests
+- Dark Mode Support: 3 tests
+- Cross-Browser Compatibility: 2 tests
+- Edge Cases: 4 tests
+- CSS Verification: 4 tests
+
+Note: Each test runs across 3 browsers (Chromium, Firefox, WebKit) for a total of 105 test executions for logo branding alone.
+
 ### Coverage Metrics
+
+**Hebrew i18n**:
 
 - Acceptance Criteria: 10/10 (100%)
 - User Scenarios: 3/3 (100%)
@@ -283,6 +393,15 @@ tests/e2e/
 - Navigation Elements: All covered
 - RTL Layout: Fully verified
 - Build Output: Comprehensive validation
+
+**Logo Branding**:
+
+- Acceptance Criteria: 6/6 (100%)
+- User Stories: 4/4 (100%)
+- Pages Tested: All pages (English + Hebrew)
+- Viewports: 4 sizes tested (320px - 1280px)
+- Browsers: Chromium, Firefox, WebKit
+- Themes: Light and Dark modes
 
 ## Test Data
 
@@ -310,6 +429,26 @@ tests/e2e/
 - `getFooterLinkTexts()` - Get all footer link texts
 - `waitForPageReady()` - Wait for page to be fully loaded
 - `takeScreenshot()` - Take debug screenshot
+
+**tests/e2e/helpers/navbar-helpers.ts**
+
+- `getNavbarLogo()` - Get logo container element
+- `getNavbarLogoImage()` - Get logo image element
+- `getNavbarBrand()` - Get brand link element
+- `getNavbar()` - Get navbar element
+- `verifyLogoVisible()` - Verify logo is visible
+- `verifyLogoImageLoaded()` - Verify logo image loaded successfully
+- `getLogoImageDimensions()` - Get logo dimensions
+- `getLogoContainerStyles()` - Get logo container CSS
+- `verifyLogoAltText()` - Verify logo alt text
+- `verifyLogoLinksToHome()` - Verify logo links to homepage
+- `clickLogoAndVerifyNavigation()` - Click logo and verify navigation
+- `verifyLogoHeight()` - Verify logo height
+- `verifyLogoAspectRatio()` - Verify logo maintains aspect ratio
+- `verifyLogoDoesNotOverflow()` - Verify logo fits in navbar
+- `verifyLogoSource()` - Verify logo image source path
+- `setViewportSize()` - Set viewport for responsive testing
+- `waitForNavbarReady()` - Wait for navbar to load
 
 ## Troubleshooting
 
@@ -391,6 +530,27 @@ mkdir -p test-results/screenshots
 ```
 
 Or check `playwright.config.ts` configuration.
+
+### Logo tests fail with "logo not visible"
+
+**Problem**: Logo CSS may not be loaded or logo image missing.
+
+**Solution**:
+
+1. Verify `src/css/custom.css` contains logo styles
+2. Check logo file exists at `static/img/logo.svg`
+3. Ensure dev server is running with latest changes
+4. Clear browser cache: `pnpm start --no-cache`
+
+### Logo height assertion fails
+
+**Problem**: Logo height is not 32px (2rem).
+
+**Solution**:
+
+1. Check root font-size is 16px (default)
+2. Verify `.navbar__logo` has `height: 2rem` in custom.css
+3. Inspect element in browser to debug computed styles
 
 ## CI/CD Integration
 
