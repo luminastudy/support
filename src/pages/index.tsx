@@ -4,6 +4,7 @@ import Link from '@docusaurus/Link'
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext'
 import Layout from '@theme/Layout'
 import Heading from '@theme/Heading'
+import Translate, { translate } from '@docusaurus/Translate'
 import styles from './index.module.css'
 import HomepageFeatures from '@site/src/components/HomepageFeatures'
 
@@ -21,7 +22,12 @@ function HomepageHeader() {
             className="button button--secondary button--lg"
             to="/docs/intro"
           >
-            Get Started
+            <Translate
+              id="homepage.getStarted"
+              description="The get started button text"
+            >
+              Get Started
+            </Translate>
           </Link>
         </div>
       </div>
@@ -31,9 +37,14 @@ function HomepageHeader() {
 
 export default function Home(): ReactNode {
   const { siteConfig } = useDocusaurusContext()
+  const title = translate({
+    id: 'homepage.title',
+    message: 'Hello from Lumina Study',
+    description: 'The homepage title',
+  })
   return (
     <Layout
-      title={`Hello from ${siteConfig.title}`}
+      title={title}
       description="Description will go into a meta tag in <head />"
     >
       <HomepageHeader />

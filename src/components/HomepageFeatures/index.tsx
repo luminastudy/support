@@ -1,48 +1,70 @@
 import type { ReactNode } from 'react'
 import clsx from 'clsx'
 import Heading from '@theme/Heading'
+import Translate from '@docusaurus/Translate'
 import styles from './styles.module.css'
 
 interface FeatureItem {
-  title: string
   Svg: React.ComponentType<React.ComponentProps<'svg'>>
+  title: ReactNode
   description: ReactNode
 }
 
 const FeatureList: FeatureItem[] = [
   {
-    title: 'Personalized Learning',
     Svg: require('@site/static/img/logo.svg').default,
+    title: (
+      <Translate id="homepage.feature1.title" description="Title of feature 1">
+        Personalized Learning
+      </Translate>
+    ),
     description: (
-      <>
+      <Translate
+        id="homepage.feature1.description"
+        description="Description of feature 1"
+      >
         Custom roadmaps tailored to your educational goals. Navigate complex
         curricula with clear, visual learning paths.
-      </>
+      </Translate>
     ),
   },
   {
-    title: 'Block-Based Visualization',
     Svg: require('@site/static/img/logo.svg').default,
+    title: (
+      <Translate id="homepage.feature2.title" description="Title of feature 2">
+        Block-Based Visualization
+      </Translate>
+    ),
     description: (
-      <>
+      <Translate
+        id="homepage.feature2.description"
+        description="Description of feature 2"
+      >
         Interactive block graphs show course structure, prerequisites, and
         relationships. Understand your learning journey at a glance.
-      </>
+      </Translate>
     ),
   },
   {
-    title: 'Multi-Language Support',
     Svg: require('@site/static/img/logo.svg').default,
+    title: (
+      <Translate id="homepage.feature3.title" description="Title of feature 3">
+        Multi-Language Support
+      </Translate>
+    ),
     description: (
-      <>
+      <Translate
+        id="homepage.feature3.description"
+        description="Description of feature 3"
+      >
         Full support for English, Hebrew, and Spanish with proper RTL/LTR
         handling. Learn in your preferred language.
-      </>
+      </Translate>
     ),
   },
 ]
 
-function Feature({ title, Svg, description }: FeatureItem) {
+function Feature({ Svg, title, description }: FeatureItem) {
   return (
     <div className={clsx('col col--4')}>
       <div className="text--center">
