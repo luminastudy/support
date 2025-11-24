@@ -1,0 +1,83 @@
+# Dependencies
+node_modules/
+.pnp
+.pnp.js
+
+# Build output
+build/
+.docusaurus/
+.cache-loader
+dist/
+
+# Testing
+coverage/
+.nyc_output
+/test-results/
+/playwright-report/
+/playwright/.cache/
+
+# Environment files
+.env
+.env.*
+!.env.example
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# PM2
+.pm2/
+pids/
+*.pid
+*.seed
+*.pid.lock
+
+# Git
+.git/
+.gitignore
+.gitattributes
+
+# GitHub
+.github/
+
+# Husky
+.husky/
+
+# Claude Code
+.claude/
+.claude-container/
+.claude-revert-backup-*/
+eslint-report.json
+
+# Kiro (spec-driven development)
+.kiro/
+
+# Documentation
+README.md
+CONTRIBUTING.md
+LICENSE
+
+# Temporary files
+*.tmp
+.cache/
+
+# CI/CD files
+.gitlab-ci.yml
+Dockerfile
+.dockerignore
+docker-compose.yml
