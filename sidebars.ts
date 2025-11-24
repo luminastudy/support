@@ -16,7 +16,7 @@ const sidebars: SidebarsConfig = {
     {
       type: 'category',
       label: 'For Developers',
-      items: ['developers/setup'],
+      items: ['developers/setup', 'developers/updating-blocks-schema'],
     },
   ],
 }
