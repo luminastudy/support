@@ -8,7 +8,8 @@
     "coverage/**",
     "*.config.js",
     "*.config.mjs",
-    "scripts/**"
+    "tests/**",
+    "scripts/*.js"
   ],
   "ignoreDependencies": [
     "@docusaurus/plugin-content-docs",

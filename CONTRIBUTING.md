@@ -41,6 +41,25 @@ pnpm build
 - `pnpm knip` - Find unused files, dependencies, and exports
 - `pnpm typecheck` - Check TypeScript types
 
+### PM2 Process Management
+
+For persistent development server management:
+
+- `pnpm pm2:start` - Start dev server with PM2
+- `pnpm pm2:stop` - Stop the dev server
+- `pnpm pm2:restart` - Restart the dev server
+- `pnpm pm2:delete` - Remove from PM2
+- `pnpm pm2:logs` - View server logs
+- `pnpm pm2:monit` - Monitor resource usage
+- `pnpm pm2:status` - Check server status
+
+PM2 is useful for:
+
+- Running the dev server in the background
+- Automatic restart on crashes
+- Centralized log management
+- Resource monitoring
+
 ## Making Changes
 
 ### Code Style

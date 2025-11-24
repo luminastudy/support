@@ -16,6 +16,35 @@ pnpm start
 
 This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
 
+### Using PM2 (Process Manager)
+
+For persistent development server management:
+
+```bash
+# Start the dev server with PM2
+pnpm pm2:start
+
+# View logs
+pnpm pm2:logs
+
+# Check status
+pnpm pm2:status
+
+# Monitor resources
+pnpm pm2:monit
+
+# Restart server
+pnpm pm2:restart
+
+# Stop server
+pnpm pm2:stop
+
+# Remove from PM2
+pnpm pm2:delete
+```
+
+PM2 keeps the server running in the background and automatically restarts it if it crashes. Logs are stored in `logs/` directory.
+
 ## Build
 
 ```bash

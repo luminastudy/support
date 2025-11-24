@@ -12,6 +12,8 @@ export default [
       '*.config.ts',
       '.claude/**',
       '.kiro/**',
+      'playwright.config.ts',
+      'ecosystem.config.cjs',
     ],
   },
   {
@@ -23,6 +25,18 @@ export default [
       'custom/jsx-classname-required': 'off',
       // Allow type definitions as needed
       '@typescript-eslint/consistent-type-definitions': 'off',
+    },
+  },
+  {
+    // Test files have different requirements
+    files: ['**/*.spec.{ts,tsx,js,jsx}', '**/tests/**/*.{ts,tsx,js,jsx}'],
+    rules: {
+      // Test files don't need corresponding spec files
+      'ddd/require-spec-file': 'off',
+      // Test utilities/helpers can have multiple exports
+      'single-export/single-export': 'off',
+      // Test files need to access file system for build verification
+      'security/detect-non-literal-fs-filename': 'off',
     },
   },
 ]

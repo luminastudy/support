@@ -22,7 +22,21 @@
     "spell": "cspell lint '**/*.{ts,tsx,js,jsx,md,mdx,json}' --gitignore",
     "spell:check": "cspell lint '**/*.{ts,tsx,js,jsx,md,mdx,json}' --gitignore",
     "knip": "knip",
-    "prepare": "husky"
+    "prepare": "husky",
+    "test:e2e": "playwright test",
+    "test:e2e:ui": "playwright test --ui",
+    "test:e2e:debug": "playwright test --debug",
+    "test:e2e:headed": "playwright test --headed",
+    "test:e2e:chromium": "playwright test --project=chromium",
+    "test:e2e:firefox": "playwright test --project=firefox",
+    "test:e2e:webkit": "playwright test --project=webkit",
+    "pm2:start": "pm2 start ecosystem.config.cjs",
+    "pm2:stop": "pm2 stop ecosystem.config.cjs",
+    "pm2:restart": "pm2 restart ecosystem.config.cjs",
+    "pm2:delete": "pm2 delete ecosystem.config.cjs",
+    "pm2:logs": "pm2 logs lumina-support-dev",
+    "pm2:monit": "pm2 monit",
+    "pm2:status": "pm2 status"
   },
   "dependencies": {
     "@docusaurus/core": "3.9.2",
@@ -40,6 +54,7 @@
     "@docusaurus/tsconfig": "3.9.2",
     "@docusaurus/types": "3.9.2",
     "@lumina-study/logo": "^1.0.0",
+    "@playwright/test": "^1.56.1",
     "@typescript-eslint/parser": "^8.47.0",
     "cspell": "^9.3.2",
     "eslint": "^9.39.1",
@@ -48,6 +63,7 @@
     "husky": "^9.1.7",
     "knip": "^5.70.1",
     "lint-staged": "^16.2.7",
+    "pm2": "^6.0.13",
     "prettier": "^3.6.2",
     "typescript": "~5.6.2"
   },
