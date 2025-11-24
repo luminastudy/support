@@ -8,7 +8,7 @@ module.exports = {
     {
       name: 'lumina-support-dev',
       script: 'pnpm',
-      args: 'start',
+      args: 'start:dev',
       cwd: __dirname,
       interpreter: 'none',
       instances: 1,
