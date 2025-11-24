@@ -14,6 +14,9 @@ importers:
       '@docusaurus/preset-classic':
         specifier: 3.9.2
         version: 3.9.2(@algolia/client-search@5.44.0)(@mdx-js/react@3.1.1(@types/react@19.2.6)(react@19.2.0))(@types/react@19.2.6)(esbuild@0.25.12)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)(search-insights@2.17.3)(typescript@5.6.3)
+      '@lumina-study/block-schema':
+        specifier: ^1.0.1
+        version: 1.0.1
       '@mdx-js/react':
         specifier: ^3.0.0
         version: 3.1.1(@types/react@19.2.6)(react@19.2.0)
@@ -1828,6 +1831,10 @@ packages:
 
   '@leichtgewicht/ip-codec@2.0.5':
     resolution: {integrity: sha512-Vo+PSpZG2/fmgmiNzYK9qWRh8h/CHrwD0mo1h1DzL4yzHNSfWYujGTYsWGreD000gcgmZ7K4Ys6Tx9TxtsKdDw==}
+
+  '@lumina-study/block-schema@1.0.1':
+    resolution: {integrity: sha512-d6vVyoggXb1lxubUfpesnLA19P1GAU1MuiQR1SYRRiPq7/Mb8mxhfVHTkZ5VOQqgrSgRSIOZsxoDkcP4jHya3w==}
+    engines: {node: '>=20.0.0'}
 
   '@lumina-study/logo@1.0.0':
     resolution: {integrity: sha512-lg4V9fwzEpxQ8dEPSuv8O65rwppckCVQiUgj8aQ/0ewv/Spj8RIB6XLZ7w2XNbgG9cm0T20jmU/78aOeqqBWDw==}
@@ -9857,6 +9864,8 @@ snapshots:
       tslib: 2.8.1
 
   '@leichtgewicht/ip-codec@2.0.5': {}
+
+  '@lumina-study/block-schema@1.0.1': {}
 
   '@lumina-study/logo@1.0.0': {}
 

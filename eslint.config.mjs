@@ -39,4 +39,11 @@ export default [
       'security/detect-non-literal-fs-filename': 'off',
     },
   },
+  {
+    // Constants files can have hardcoded URLs for static resources (npm packages, docs)
+    files: ['**/constants.{ts,tsx,js,jsx}'],
+    rules: {
+      'default/no-hardcoded-urls': 'off',
+    },
+  },
 ]

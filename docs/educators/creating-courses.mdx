@@ -1,0 +1,77 @@
+---
+sidebar_position: 1
+---
+
+import BlockSchemaDisplay from '@site/src/components/BlockSchemaDisplay'
+
+# Creating Courses
+
+Learn how to create and publish courses on the Lumina Study platform.
+
+## Prerequisites
+
+Before creating a course, you need:
+
+- **Public Git Repository** - GitHub, GitLab, or any public git source control (GitHub preferred)
+- Course content prepared (syllabus, structure, materials)
+- Understanding of block-based course structure
+
+## Course Creation Process
+
+### 1. Set Up Repository
+
+Create a public git repository with the following structure:
+
+```
+my-course/
+├── lumina.json
+└── README.md
+```
+
+### 2. Define Block Structure
+
+Add blocks to your `lumina.json`:
+
+## Block Schema
+
+<BlockSchemaDisplay />
+
+## Publishing Workflow
+
+### Git-Based Publishing
+
+Lumina Study uses a git-based workflow:
+
+1. **Create** your course repository (public GitHub repo recommended)
+2. **Define** course structure in `lumina.json`
+3. **Commit** your changes to git
+4. **Push** to your public repository
+
+### Automatic Updates
+
+Once registered:
+
+- Changes pushed to your repository automatically update the course
+- Git commit history tracks all changes
+
+## Best Practices
+
+### Naming Conventions
+
+- Use clear, descriptive block titles
+- Be consistent with terminology
+- Provide translations for all languages
+
+### Course Structure
+
+- Start with broad topics, drill down to specifics
+- Limit depth to 3-4 levels for clarity
+- Use prerequisites judiciously
+- Group related content together
+
+### Content Organization
+
+- One concept per block
+- Clear learning objectives for each block
+- Link to external resources when appropriate
+- Keep blocks focused and manageable

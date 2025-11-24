@@ -1,0 +1,50 @@
+/**
+ * Styles for BlockSchemaDisplay component
+ */
+
+.schemaContainer {
+  margin: 1.5rem 0;
+}
+
+.schemaContainer pre {
+  background-color: var(--ifm-code-background);
+  border-radius: var(--ifm-code-border-radius);
+  padding: 1rem;
+  overflow-x: auto;
+}
+
+.schemaContainer code {
+  background-color: transparent;
+  padding: 0;
+}
+
+.schemaContainer details {
+  margin-top: 1rem;
+  padding: 1rem;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  border-radius: var(--ifm-code-border-radius);
+}
+
+.schemaContainer details summary {
+  cursor: pointer;
+  user-select: none;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.schemaContainer details[open] summary {
+  margin-bottom: 1rem;
+}
+
+.schemaContainer ul {
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.schemaContainer ul li {
+  margin-bottom: 0.5rem;
+}
+
+.schemaContainer small {
+  color: var(--ifm-color-emphasis-600);
+}
