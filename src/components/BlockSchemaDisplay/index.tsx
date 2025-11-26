@@ -1,5 +1,5 @@
 import type { ReactNode } from 'react'
-import blockSchemaV02 from '@lumina-study/block-schema/v0.2'
+import blockSchema from '@lumina-study/block-schema'
 import SchemaDetails from './SchemaDetails'
 import { NPM_PACKAGE_URL } from './constants'
 import styles from './styles.module.css'
@@ -7,12 +7,12 @@ import styles from './styles.module.css'
 /**
  * BlockSchemaDisplay component
  * Displays the Block Schema from @lumina-study/block-schema package
- * This ensures the documentation always shows the latest schema version
+ * Uses the default export which always points to the latest schema version
  */
 export default function BlockSchemaDisplay(): ReactNode {
   // Generate example based on the actual schema
   const schemaExample = {
-    id: 'uuid-format',
+    id: 'uuid-format-or-external-reference',
     title: {
       he_text: 'Hebrew title',
       en_text: 'English title',
@@ -21,8 +21,8 @@ export default function BlockSchemaDisplay(): ReactNode {
     parents: ['parent-block-id (UUID or external reference)'],
   }
 
-  const schemaVersion = blockSchemaV02.version
-  const schemaDescription = blockSchemaV02.description
+  const schemaVersion = blockSchema.version
+  const schemaDescription = blockSchema.description
 
   return (
     <div className={styles.schemaContainer}>
@@ -41,7 +41,7 @@ export default function BlockSchemaDisplay(): ReactNode {
           <strong>View Full JSON Schema</strong>
         </summary>
         <pre>
-          <code>{JSON.stringify(blockSchemaV02, null, 2)}</code>
+          <code>{JSON.stringify(blockSchema, null, 2)}</code>
         </pre>
       </details>
       <SchemaDetails />
