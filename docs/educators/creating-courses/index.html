@@ -4,8 +4,8 @@
 <meta charset="UTF-8">
 <meta name="generator" content="Docusaurus v3.9.2">
 <title data-rh="true">Creating Courses | Lumina Study</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:image" content="https://luminastudy.github.io/support/img/lumina-social-card.png"><meta data-rh="true" name="twitter:image" content="https://luminastudy.github.io/support/img/lumina-social-card.png"><meta data-rh="true" property="og:url" content="https://luminastudy.github.io/support/docs/educators/creating-courses"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="Creating Courses | Lumina Study"><meta data-rh="true" name="description" content="Learn how to create and publish courses on the Lumina Study platform."><meta data-rh="true" property="og:description" content="Learn how to create and publish courses on the Lumina Study platform."><link data-rh="true" rel="icon" href="/support/img/favicon.ico"><link data-rh="true" rel="canonical" href="https://luminastudy.github.io/support/docs/educators/creating-courses"><link data-rh="true" rel="alternate" href="https://luminastudy.github.io/support/docs/educators/creating-courses" hreflang="en"><link data-rh="true" rel="alternate" href="https://luminastudy.github.io/support/docs/educators/creating-courses" hreflang="x-default"><script data-rh="true" type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Creating Courses","item":"https://luminastudy.github.io/support/docs/educators/creating-courses"}]}</script><link rel="stylesheet" href="/support/assets/css/styles.e294cecb.css">
-<script src="/support/assets/js/runtime~main.4f8b5805.js" defer="defer"></script>
-<script src="/support/assets/js/main.69f1b507.js" defer="defer"></script>
+<script src="/support/assets/js/runtime~main.9a9f7e67.js" defer="defer"></script>
+<script src="/support/assets/js/main.4aee4770.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
 <svg style="display: none;"><defs>
@@ -28,8 +28,8 @@
 <p>The <code>lumina.json</code> file must be an array of blocks:</p>
 <div class="language-json codeBlockContainer_JDk3 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_x1aR"><pre tabindex="0" class="prism-code language-json codeBlock_kNmT thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_U2sc"><span class="token-line" style="color:#393A34"><span class="token punctuation" style="color:#393A34">[</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">  &lt;block</span><span class="token number" style="color:#36acaa">-1</span><span class="token plain">&gt;</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">  &lt;block</span><span class="token number" style="color:#36acaa">-2</span><span class="token plain">&gt;</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">  &lt;block-n&gt;</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token punctuation" style="color:#393A34">]</span><br></span></code></pre></div></div>
 <h2 class="anchor anchorTargetStickyNavbar_yl8j" id="block-schema">Block Schema<a href="#block-schema" class="hash-link" aria-label="Direct link to Block Schema" title="Direct link to Block Schema" translate="no">​</a></h2>
-<div class="schemaContainer_rqb7"><p>Courses follow the <code>@lumina-study/block-schema</code> specification (version <!-- -->0.2<!-- -->):</p><p><em>Schema for a Lumina Study block object (v0.2)</em></p><pre><code>{
-  &quot;id&quot;: &quot;uuid-format&quot;,
+<div class="schemaContainer_rqb7"><p>Courses follow the <code>@lumina-study/block-schema</code> specification (version <!-- -->0.3<!-- -->):</p><p><em>Schema for a Lumina Study block object (v0.3)</em></p><pre><code>{
+  &quot;id&quot;: &quot;uuid-format-or-external-reference&quot;,
   &quot;title&quot;: {
     &quot;he_text&quot;: &quot;Hebrew title&quot;,
     &quot;en_text&quot;: &quot;English title&quot;
@@ -42,10 +42,10 @@
   ]
 }</code></pre><details><summary><strong>View Full JSON Schema</strong></summary><pre><code>{
   &quot;$schema&quot;: &quot;http://json-schema.org/draft-07/schema#&quot;,
-  &quot;$id&quot;: &quot;https://raw.githubusercontent.com/luminastudy/block/main/schema/v0.2/block.schema.json&quot;,
+  &quot;$id&quot;: &quot;https://raw.githubusercontent.com/luminastudy/block/main/schema/v0.3/block.schema.json&quot;,
   &quot;title&quot;: &quot;Block&quot;,
-  &quot;description&quot;: &quot;Schema for a Lumina Study block object (v0.2)&quot;,
-  &quot;version&quot;: &quot;0.2&quot;,
+  &quot;description&quot;: &quot;Schema for a Lumina Study block object (v0.3)&quot;,
+  &quot;version&quot;: &quot;0.3&quot;,
   &quot;type&quot;: &quot;object&quot;,
   &quot;definitions&quot;: {
     &quot;blockReference&quot;: {
@@ -66,9 +66,8 @@
   },
   &quot;properties&quot;: {
     &quot;id&quot;: {
-      &quot;type&quot;: &quot;string&quot;,
-      &quot;format&quot;: &quot;uuid&quot;,
-      &quot;description&quot;: &quot;Unique identifier for the block&quot;
+      &quot;$ref&quot;: &quot;#/definitions/blockReference&quot;,
+      &quot;description&quot;: &quot;Unique identifier for the block - local UUID or fully qualified external reference&quot;
     },
     &quot;title&quot;: {
       &quot;type&quot;: &quot;object&quot;,
@@ -112,7 +111,7 @@
     &quot;parents&quot;
   ],
   &quot;additionalProperties&quot;: true
-}</code></pre></details><h3>Schema Details</h3><h4>Block Reference Types</h4><p>Block references (used in <code>prerequisites</code> and<!-- --> <code>parents</code>) can be:</p><ul><li><strong>Local UUID</strong>: A UUID v4 format identifier for blocks within the same course<br><code>Example: 550e8400-e29b-41d4-a716-446655440000</code></li><li><strong>External Reference</strong>: Reference to blocks in other repositories<br><code>Format: &lt;platform&gt;:&lt;org&gt;/&lt;repo&gt;[/&lt;block-id&gt;][#&lt;ref&gt;]</code><br><code>Example: github:luminastudy/cs-basics/550e8400-e29b-41d4-a716-446655440000#v1.0</code></li></ul><h4>Required Fields</h4><ul><li><code>id</code> (string, UUID format): Unique identifier for the block</li><li><code>title</code> (object): Multilingual title<ul><li><code>he_text</code> (string): Hebrew text</li><li><code>en_text</code> (string): English text</li></ul></li><li><code>prerequisites</code> (array): Array of prerequisite block references</li><li><code>parents</code> (array): Array of parent block references</li></ul><p><small>Schema version: <!-- -->0.2<!-- --> |<!-- --> <a href="https://www.npmjs.com/package/@lumina-study/block-schema" target="_blank" rel="noopener noreferrer">View on npm</a></small></p></div>
+}</code></pre></details><h3>Schema Details</h3><h4>Block Reference Types</h4><p>Block references (used in <code>prerequisites</code> and<!-- --> <code>parents</code>) can be:</p><ul><li><strong>Local UUID</strong>: A UUID v4 format identifier for blocks within the same course<br><code>Example: 550e8400-e29b-41d4-a716-446655440000</code></li><li><strong>External Reference</strong>: Reference to blocks in other repositories<br><code>Format: &lt;platform&gt;:&lt;org&gt;/&lt;repo&gt;[/&lt;block-id&gt;][#&lt;ref&gt;]</code><br><code>Example: github:luminastudy/cs-basics/550e8400-e29b-41d4-a716-446655440000#v1.0</code></li></ul><h4>Required Fields</h4><ul><li><code>id</code> (string, UUID format): Unique identifier for the block</li><li><code>title</code> (object): Multilingual title<ul><li><code>he_text</code> (string): Hebrew text</li><li><code>en_text</code> (string): English text</li></ul></li><li><code>prerequisites</code> (array): Array of prerequisite block references</li><li><code>parents</code> (array): Array of parent block references</li></ul><p><small>Schema version: <!-- -->0.3<!-- --> |<!-- --> <a href="https://www.npmjs.com/package/@lumina-study/block-schema" target="_blank" rel="noopener noreferrer">View on npm</a></small></p></div>
 <h2 class="anchor anchorTargetStickyNavbar_yl8j" id="publishing-workflow">Publishing Workflow<a href="#publishing-workflow" class="hash-link" aria-label="Direct link to Publishing Workflow" title="Direct link to Publishing Workflow" translate="no">​</a></h2>
 <h3 class="anchor anchorTargetStickyNavbar_yl8j" id="git-based-publishing">Git-Based Publishing<a href="#git-based-publishing" class="hash-link" aria-label="Direct link to Git-Based Publishing" title="Direct link to Git-Based Publishing" translate="no">​</a></h3>
 <p>Lumina Study uses a git-based workflow:</p>
