@@ -4,23 +4,20 @@ import SchemaDetails from './SchemaDetails'
 import { NPM_PACKAGE_URL } from './constants'
 import styles from './styles.module.css'
 
+// Example follows the schema's required properties
+const schemaExample = {
+  id: '550e8400-e29b-41d4-a716-446655440000',
+  title: { he_text: 'כותרת בעברית', en_text: 'English title' },
+  prerequisites: [],
+  parents: [],
+}
+
 /**
  * BlockSchemaDisplay component
  * Displays the Block Schema from @lumina-study/block-schema package
  * Uses the default export which always points to the latest schema version
  */
 export default function BlockSchemaDisplay(): ReactNode {
-  // Generate example based on the actual schema
-  const schemaExample = {
-    id: 'uuid-format-or-external-reference',
-    title: {
-      he_text: 'Hebrew title',
-      en_text: 'English title',
-    },
-    prerequisites: ['prerequisite-block-id (UUID or external reference)'],
-    parents: ['parent-block-id (UUID or external reference)'],
-  }
-
   const schemaVersion = blockSchema.version
   const schemaDescription = blockSchema.description
 
