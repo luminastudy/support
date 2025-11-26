@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="generator" content="Docusaurus v3.9.2">
 <title data-rh="true">Creating Courses | Lumina Study</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:image" content="https://luminastudy.github.io/support/img/lumina-social-card.png"><meta data-rh="true" name="twitter:image" content="https://luminastudy.github.io/support/img/lumina-social-card.png"><meta data-rh="true" property="og:url" content="https://luminastudy.github.io/support/docs/educators/creating-courses"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="Creating Courses | Lumina Study"><meta data-rh="true" name="description" content="Learn how to create and publish courses on the Lumina Study platform."><meta data-rh="true" property="og:description" content="Learn how to create and publish courses on the Lumina Study platform."><link data-rh="true" rel="icon" href="/support/img/favicon.ico"><link data-rh="true" rel="canonical" href="https://luminastudy.github.io/support/docs/educators/creating-courses"><link data-rh="true" rel="alternate" href="https://luminastudy.github.io/support/docs/educators/creating-courses" hreflang="en"><link data-rh="true" rel="alternate" href="https://luminastudy.github.io/support/docs/educators/creating-courses" hreflang="x-default"><script data-rh="true" type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Creating Courses","item":"https://luminastudy.github.io/support/docs/educators/creating-courses"}]}</script><link rel="stylesheet" href="/support/assets/css/styles.e294cecb.css">
-<script src="/support/assets/js/runtime~main.9a9f7e67.js" defer="defer"></script>
+<script src="/support/assets/js/runtime~main.2e2f6904.js" defer="defer"></script>
 <script src="/support/assets/js/main.4aee4770.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
@@ -29,17 +29,13 @@
 <div class="language-json codeBlockContainer_JDk3 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_x1aR"><pre tabindex="0" class="prism-code language-json codeBlock_kNmT thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_U2sc"><span class="token-line" style="color:#393A34"><span class="token punctuation" style="color:#393A34">[</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">  &lt;block</span><span class="token number" style="color:#36acaa">-1</span><span class="token plain">&gt;</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">  &lt;block</span><span class="token number" style="color:#36acaa">-2</span><span class="token plain">&gt;</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">  &lt;block-n&gt;</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token punctuation" style="color:#393A34">]</span><br></span></code></pre></div></div>
 <h2 class="anchor anchorTargetStickyNavbar_yl8j" id="block-schema">Block Schema<a href="#block-schema" class="hash-link" aria-label="Direct link to Block Schema" title="Direct link to Block Schema" translate="no">​</a></h2>
 <div class="schemaContainer_rqb7"><p>Courses follow the <code>@lumina-study/block-schema</code> specification (version <!-- -->0.3<!-- -->):</p><p><em>Schema for a Lumina Study block object (v0.3)</em></p><pre><code>{
-  &quot;id&quot;: &quot;uuid-format-or-external-reference&quot;,
+  &quot;id&quot;: &quot;550e8400-e29b-41d4-a716-446655440000&quot;,
   &quot;title&quot;: {
-    &quot;he_text&quot;: &quot;Hebrew title&quot;,
+    &quot;he_text&quot;: &quot;כותרת בעברית&quot;,
     &quot;en_text&quot;: &quot;English title&quot;
   },
-  &quot;prerequisites&quot;: [
-    &quot;prerequisite-block-id (UUID or external reference)&quot;
-  ],
-  &quot;parents&quot;: [
-    &quot;parent-block-id (UUID or external reference)&quot;
-  ]
+  &quot;prerequisites&quot;: [],
+  &quot;parents&quot;: []
 }</code></pre><details><summary><strong>View Full JSON Schema</strong></summary><pre><code>{
   &quot;$schema&quot;: &quot;http://json-schema.org/draft-07/schema#&quot;,
   &quot;$id&quot;: &quot;https://raw.githubusercontent.com/luminastudy/block/main/schema/v0.3/block.schema.json&quot;,
