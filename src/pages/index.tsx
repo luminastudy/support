@@ -48,7 +48,7 @@ export default function Home(): ReactNode {
       description="Description will go into a meta tag in <head />"
     >
       <HomepageHeader />
-      <main>
+      <main className={styles.mainContent}>
         <HomepageFeatures />
       </main>
     </Layout>

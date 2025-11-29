@@ -23,29 +23,41 @@ export default function BlockSchemaDisplay(): ReactNode {
 
   return (
     <div className={styles.schemaContainer}>
-      <p>
-        Courses follow the <code>@lumina-study/block-schema</code> specification
-        (version {schemaVersion}):
+      <p className={styles.schemaDescription}>
+        Courses follow the{' '}
+        <code className={styles.detailsCode}>@lumina-study/block-schema</code>{' '}
+        specification (version {schemaVersion}):
       </p>
-      <p>
-        <em>{schemaDescription}</em>
+      <p className={styles.schemaDescription}>
+        <em className={styles.schemaEmphasis}>{schemaDescription}</em>
       </p>
-      <pre>
-        <code>{JSON.stringify(schemaExample, null, 2)}</code>
+      <pre className={styles.schemaPreBlock}>
+        <code className={styles.schemaCodeBlock}>
+          {JSON.stringify(schemaExample, null, 2)}
+        </code>
       </pre>
-      <details>
-        <summary>
-          <strong>View Full JSON Schema</strong>
+      <details className={styles.schemaDetailsBlock}>
+        <summary className={styles.schemaSummary}>
+          <strong className={styles.schemaSummaryTitle}>
+            View Full JSON Schema
+          </strong>
         </summary>
-        <pre>
-          <code>{JSON.stringify(blockSchema, null, 2)}</code>
+        <pre className={styles.schemaPreBlock}>
+          <code className={styles.schemaCodeBlock}>
+            {JSON.stringify(blockSchema, null, 2)}
+          </code>
         </pre>
       </details>
       <SchemaDetails />
-      <p>
-        <small>
+      <p className={styles.schemaFooter}>
+        <small className={styles.schemaFooterText}>
           Schema version: {schemaVersion} |{' '}
-          <a href={NPM_PACKAGE_URL} target="_blank" rel="noopener noreferrer">
+          <a
+            className={styles.schemaLink}
+            href={NPM_PACKAGE_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             View on npm
           </a>
         </small>

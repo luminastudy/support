@@ -48,3 +48,109 @@
 .schemaContainer small {
   color: var(--ifm-color-emphasis-600);
 }
+
+/* SchemaDetails component classes */
+.detailsHeading {
+  margin-top: 1.5rem;
+}
+
+.detailsSubheading {
+  margin-top: 1rem;
+}
+
+.detailsParagraph {
+  margin-bottom: 0.5rem;
+}
+
+.detailsCode {
+  background-color: var(--ifm-code-background);
+  padding: 0.1rem 0.3rem;
+  border-radius: var(--ifm-code-border-radius);
+}
+
+.detailsList {
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.detailsListItem {
+  margin-bottom: 0.5rem;
+}
+
+.detailsStrong {
+  font-weight: 600;
+}
+
+.detailsLineBreak {
+  display: block;
+  margin-top: 0.25rem;
+}
+
+.detailsNestedList {
+  margin-top: 0.25rem;
+  margin-left: 1rem;
+}
+
+/* BlockSchemaDisplay index component classes */
+.sectionTitle {
+  margin-top: 1rem;
+}
+
+.sectionParagraph {
+  margin-bottom: 0.5rem;
+}
+
+.codeBlock {
+  display: block;
+  margin: 0.5rem 0;
+}
+
+.fieldList {
+  margin-top: 0.5rem;
+}
+
+.fieldListItem {
+  margin-bottom: 0.25rem;
+}
+
+/* Additional BlockSchemaDisplay classes */
+.schemaDescription {
+  margin-bottom: 0.5rem;
+}
+
+.schemaEmphasis {
+  font-style: italic;
+}
+
+.schemaPreBlock {
+  margin: 0.5rem 0;
+}
+
+.schemaCodeBlock {
+  display: block;
+}
+
+.schemaDetailsBlock {
+  margin-top: 1rem;
+}
+
+.schemaSummary {
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.schemaSummaryTitle {
+  font-weight: 600;
+}
+
+.schemaFooter {
+  margin-top: 1rem;
+}
+
+.schemaFooterText {
+  color: var(--ifm-color-emphasis-600);
+}
+
+.schemaLink {
+  color: var(--ifm-link-color);
+}

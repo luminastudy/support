@@ -21,8 +21,6 @@ export default [
     rules: {
       // Docusaurus uses require() for static assets
       '@typescript-eslint/no-require-imports': 'off',
-      // Docusaurus JSX doesn't always need className
-      'custom/jsx-classname-required': 'off',
       // Allow type definitions as needed
       '@typescript-eslint/consistent-type-definitions': 'off',
     },
