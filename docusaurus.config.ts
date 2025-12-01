@@ -15,14 +15,13 @@ const config: Config = {
   },
 
   // Set the production url of your site here
-  url: 'https://luminastudy.github.io',
+  url: 'https://support.lumina.study',
   // Set the /<baseUrl>/ pathname under which your site is served
-  // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/support/',
+  baseUrl: '/',
 
-  // GitHub pages deployment config.
-  organizationName: 'luminastudy', // Usually your GitHub org/user name.
-  projectName: 'support', // Usually your repo name.
+  // GitHub organization info
+  organizationName: 'luminastudy',
+  projectName: 'support',
 
   onBrokenLinks: 'throw',
 
