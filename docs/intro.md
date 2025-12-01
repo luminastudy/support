@@ -4,11 +4,11 @@ sidebar_position: 1
 
 # Welcome to Lumina Study
 
-**Lumina Study** is a comprehensive educational technology platform designed to provide personalized learning roadmaps for school and university subjects.
+**Lumina Study** is a comprehensive learning platform that provides personalized learning roadmaps for any topic the community has built courses for.
 
 ## What is Lumina Study?
 
-Lumina Study helps students navigate their academic journey by:
+Lumina Study helps learners navigate their learning journey by:
 
 - **Personalized Learning Paths** - Custom roadmaps tailored to your educational goals
 - **Interactive Course Visualization** - Visual block-based representations of course structures
@@ -17,12 +17,12 @@ Lumina Study helps students navigate their academic journey by:
 
 ## Platform Components
 
-### Student Platform
+### Learner Platform
 
-The main learning interface where students:
+The main learning interface where learners:
 
 - Access their personalized learning roadmaps
-- Browse available courses
+- Browse community-built courses on any topic
 - Track learning progress
 - Engage with course materials
 

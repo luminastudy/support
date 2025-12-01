@@ -8,14 +8,14 @@ Learn how to discover and explore courses on the Lumina Study platform.
 
 ## Course Catalog
 
-The course catalog provides access to all published courses across different subjects and institutions.
+The course catalog provides access to all community-built courses across different topics and categories.
 
 ### Filtering Courses
 
 You can filter courses by:
 
-- **Subject** - Mathematics, Computer Science, Physics, etc.
-- **Institution** - University or organization offering the course
+- **Topic** - Any subject the community has created courses for
+- **Creator** - Community member or organization offering the course
 - **Level** - Beginner, Intermediate, Advanced
 - **Language** - English, Hebrew, Spanish
 
@@ -25,8 +25,8 @@ Use the search bar to find specific courses by:
 
 - Course name
 - Keywords in course description
-- Institution name
-- Subject tags
+- Creator name
+- Topic tags
 
 ## Course Preview
 
@@ -35,7 +35,7 @@ Before enrolling, you can preview:
 - **Course Overview** - Description and learning objectives
 - **Course Structure** - Visual block diagram showing course organization
 - **Prerequisites** - Required knowledge or prior courses
-- **Learning Path** - See how this course fits into larger curriculum
+- **Learning Path** - See how this course fits into your learning journey
 
 ## Block Visualization
 
