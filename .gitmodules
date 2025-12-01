@@ -1,3 +1,6 @@
 [submodule "terraform"]
 	path = terraform
 	url = https://github.com/luminastudy/support-terraform.git
+[submodule "support-terraform"]
+	path = support-terraform
+	url = https://github.com/luminastudy/support-terraform.git
